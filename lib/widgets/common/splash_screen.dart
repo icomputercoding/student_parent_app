@@ -15,8 +15,7 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
-
-    Timer(const Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const WelcomeScreen()));
     });
@@ -32,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen>
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'images/icon.png',
+              'assets/images/icon.png',
               width: 200,
               height: 200,
             ),
